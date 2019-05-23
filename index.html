@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(3000).fadeOut('slow');});</script>
+  
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <script src="javascript.js"></script>
+
+	<title>Тестовое задание RANDOM.ORG</title>
+</head>
+<body>
+  <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>Идет обработа данных</small></div></div>
+
+<div id="Mission">
+  <p>Используя вот этот сервис - https://www.random.org/integers/<br> сгенерировать миллион случайных цифр в диапазоне 0-1.
+  Для сгенерированных чисел найти:<br>
+  <b>1.</b> Количество [0], и количество [1]<br>
+  2. Количество последовательностей из двух цифр (00, 01, 10, 11).<br>
+  3. Количество последовательностей из трех цифр (000, 001, 010, и т.д.)<br>
+  4. Каждый из предыдущих пунктов выразить в виде процентного соотношения. Например:<br>
+  Из десяти сгенерированных цифр, нулей - 7, единиц 3. В процентах, соответственно, 70%/30%.<br></p>
+</div><br>
+<h1>Пункт №1 - количество сгенерированных [0],[1]</h1>
+<div id="ajs"></div>
+<div id="bjs"></div>
+<h1>Пункт №2 - количество последовательностей из двух цифр [00], [01], [10], [11]</h1>
+<div id="zzkjs"></div>
+<div id="zokjs"></div>
+<div id="ozkjs"></div>
+<div id="ookjs"></div>
+<h1>Пункт №3 - количество последовательностей из трех цифр [000], [001], [010], [011], [100], [101], [110], [111]</h1>
+<div id="zzzkjs"></div>
+<div id="zzokjs"></div>
+<div id="zozkjs"></div>
+<div id="zookjs"></div>
+<div id="ozzkjs"></div>
+<div id="ozokjs"></div>
+<div id="oozkjs"></div>
+<div id="oookjs"></div>
+<h1>Пункт №4 - каждый из предыдущих пунктов выразить в виде процентного соотношения (выражено в виде диаграммы)</h1>
+
+<div id="procentiV1" style="height: 370px; width: 100%;"></div>
+<div id="procentiV2" style="height: 370px; width: 100%;"></div>
+<div id="procentiV3" style="height: 370px; width: 100%;"></div>
+</body>
+<!--
+  
+-->
+
+</html>
+
+
+
+
